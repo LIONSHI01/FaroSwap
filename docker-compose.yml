@@ -11,5 +11,5 @@ services:
       - .env
     environment:
       - NODE_ENV=development
-    command: node index.js
+    command: node bot.js
     restart: always
