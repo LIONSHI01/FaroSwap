@@ -453,7 +453,11 @@ const bot = new Faroswap();
 
 (async () => {
   while (true) {
-    await bot.main();
+    try {
+      await bot.main();
+    } catch (error) {
+      this.log(chalk.red("发生错误: " + error));
+    }
     // 24小时倒计时
     let seconds = 24 * 60 * 60;
     while (seconds > 0) {
