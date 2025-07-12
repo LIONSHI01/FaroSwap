@@ -6,7 +6,9 @@ import { SocksProxyAgent } from "socks-proxy-agent";
 
 class Faroswap {
   constructor() {
-    this.RPC_URL = "https://testnet.dplabs-internal.com";
+    this.RPC_URL =
+      "https://api.zan.top/node/v1/pharos/testnet/54b49326c9f44b6e8730dc5dd4348421";
+    // this.RPC_URL = "https://testnet.dplabs-internal.com";
     this.PHRS_CONTRACT_ADDRESS = "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE";
     this.WPHRS_CONTRACT_ADDRESS = "0x3019B247381c850ab53Dc0EE53bCe7A07Ea9155f";
     this.USDC_CONTRACT_ADDRESS = "0x72df0bcd7276f2dFbAc900D1CE63c272C4BCcCED";
